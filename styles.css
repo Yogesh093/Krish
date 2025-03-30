@@ -1,0 +1,127 @@
+    :root {
+        :root {
+            --primary-color: #;
+            /* Deep Purple */
+            --secondary-color: #ffffff;
+            /* Earthy Brown */
+            --accent-color: #f09d17;
+            /* Golden Ochre */
+            --background-color: hsl(45, 14%, 77%);
+            /* Soft Beige */
+            --text-color: #333333;
+            /* Charcoal Gray */
+            --link-color: #749A67;
+            /* Olive Green */
+            --hover-color: #BE5C58;
+            /* Rust Orange */
+        }
+
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: 2.5fr 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+            "header header"
+            "content details"
+            "footer footer";
+        grid-gap: 10px;
+    }
+
+    hr {
+        width: 100%; /* Makes it narrow */
+        height: 1px; /* Sets the desired height */
+        background-color: black; /* Adds color to make it visible */
+        border: none; /* Removes default border */
+    }
+
+    button {
+        background-color: yellow;
+        border: none;
+        width: 10em;
+        height: 4em;
+        margin: 10%;
+    }    
+
+    .header {
+        background-color: hsl(39, 45%, 90%);
+        grid-area: header;
+        top: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .content {
+        background-color: var(--secondary-color);
+        grid-area: content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        overflow: scroll;
+
+    }
+
+    .details {
+        background-color: transparent;
+        grid-area: details;
+    }
+
+    .footer {
+        background-color: hsl(39, 45%, 90%);
+        text-align: center;
+        grid-area: footer;
+    }
+
+
+    .logo {
+        width: 45px;
+        height: 45px;
+    }
+
+
+    .course-details {
+        background-color: rgba(128, 128, 128, 0.395);
+        max-width: 80%;
+        height: auto;
+        padding: 30px;
+        border: none;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .Video-title {
+        align-self: flex-start;
+        margin: 5px;
+    }
+
+    .description {
+        margin: 20px;
+    }
+
+    .course-side-deatils{
+        background-color: rgba(128, 128, 128, 0.395);
+        max-width: 80%;
+        height: auto;
+        padding: 20px;
+        margin-top: 10%;
+        border: none;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
