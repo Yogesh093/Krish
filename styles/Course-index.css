@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(15, 15, 15);
+    color: #f1f1f1;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header header header"
+        "Course Course Course"
+        "footer footer footer";
+}
+
+
+.header {
+    position: sticky;
+    background-color: hsl(0, 0%, 0%);
+    grid-area: header;
+    top: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    animation: fadeIn 1s ease-out;
+    color: white;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+}
+
+button {
+    background-color: rgba(255, 255, 0, 0.772);
+    border: none;
+    width: 10em;
+    height: 4em;
+    margin: 10%;
+}
+
+button:hover {
+    background-color: rgb(255, 255, 0);
+}
+
+.main-container {
+    grid-area: Course;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 10px;
+}
+
+.main-container>div {  /* This is .Item */
+    background-color: transparent;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1.1 / 1;
+    margin: 5px;
+    flex-direction:column;
+}
+
+
+.Course-Thumbnail{
+    align-self: baseline;
+    width: 100%;
+    height: 70%;
+    top: 0;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: black;
+    text-align: center;
+    grid-area: footer;
+    color: white;
+    bottom: 0;
+}

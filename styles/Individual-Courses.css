@@ -1,23 +1,3 @@
-    :root {
-        :root {
-            --primary-color: #;
-            /* Deep Purple */
-            --secondary-color: #ffffff;
-            /* Earthy Brown */
-            --accent-color: #f09d17;
-            /* Golden Ochre */
-            --background-color: hsl(45, 14%, 77%);
-            /* Soft Beige */
-            --text-color: #333333;
-            /* Charcoal Gray */
-            --link-color: #749A67;
-            /* Olive Green */
-            --hover-color: #BE5C58;
-            /* Rust Orange */
-        }
-
-    }
-
     * {
         margin: 0;
         padding: 0;
@@ -25,6 +5,8 @@
     }
 
     body {
+        background-color:rgb(15, 15, 15) ;
+        color: #f1f1f1;
         min-height: 100vh;
         display: grid;
         grid-template-columns: 2.5fr 1fr;
@@ -38,7 +20,7 @@
     hr {
         width: 100%; /* Makes it narrow */
         height: 1px; /* Sets the desired height */
-        background-color: black; /* Adds color to make it visible */
+        background-color: rgb(15, 15, 15); /* Adds color to make it visible */
         border: none; /* Removes default border */
     }
 
@@ -63,7 +45,6 @@
         align-items: center;
         justify-content: space-around;
         animation: fadeIn 1s ease-out;
-        color: white;
     }
 
     .content {
@@ -79,14 +60,13 @@
     .details {
         background-color: black;
         grid-area: details;
-        color: white;
     }
 
     .footer {
         background-color: black;
         text-align: center;
         grid-area: footer;
-        color: white;
+        bottom: 0;
     }
 
 
@@ -107,7 +87,6 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        color: white;
     }
 
     .Video-title {
