@@ -32,7 +32,7 @@
         grid-template-areas:
             "header header"
             "content details"
-            "footer foter";
+            "footer footer";
         grid-gap: 10px;
     }
 
@@ -101,7 +101,6 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-
     }
 
     .Video-title {
