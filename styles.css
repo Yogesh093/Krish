@@ -33,7 +33,6 @@
             "header header"
             "content details"
             "footer footer";
-        grid-gap: 10px;
     }
 
     hr {
@@ -44,27 +43,32 @@
     }
 
     button {
-        background-color: yellow;
+        background-color: rgba(255, 255, 0, 0.772);
         border: none;
         width: 10em;
         height: 4em;
         margin: 10%;
     }    
 
+    button:hover {
+        background-color: rgb(255, 255, 0);
+    }
+
     .header {
         position: sticky;
-        background-color: hsl(39, 45%, 90%);
+        background-color: hsl(0, 0%, 0%);
         grid-area: header;
         top: 0;
         display: inline-flex;
         align-items: center;
         justify-content: space-around;
         animation: fadeIn 1s ease-out;
+        color: white;
     }
 
     .content {
         visibility: none;
-        background-color: var(--secondary-color);
+        background-color: black;
         grid-area: content;
         display: flex;
         justify-content: center;
@@ -73,14 +77,16 @@
     }
 
     .details {
-        background-color: transparent;
+        background-color: black;
         grid-area: details;
+        color: white;
     }
 
     .footer {
-        background-color: hsl(39, 45%, 90%);
+        background-color: black;
         text-align: center;
         grid-area: footer;
+        color: white;
     }
 
 
@@ -101,6 +107,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        color: white;
     }
 
     .Video-title {
