@@ -29,6 +29,7 @@ header {
     justify-content: space-around;
     animation: fadeIn 1s ease-out;
     color: white;
+    margin-bottom: 50px;
 }
 
 .logo {
@@ -39,7 +40,7 @@ header {
 nav {
     list-style-type: none;
     padding: 0;
-    gap: 5rem;  
+    gap: 3rem;  
     display: flex;
     justify-content: center;
     align-self:center;
@@ -83,11 +84,10 @@ main{
     grid-area: main;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
     grid-template-areas:
-        "Featured video-tile"
-        "Featured Goals"
-        "Description image";
+        "Featured Description"
+        "video-tile Goals";
     grid-gap: 10px;
 }
 
