@@ -21,7 +21,7 @@ body {
 
 .header {
     position: sticky;
-    background-color: hsl(0, 0%, 0%);
+    background-color: rgb(15, 15, 15);
     grid-area: header;
     top: 0;
     display: inline-flex;
@@ -79,7 +79,7 @@ button:hover {
 }
 
 .footer {
-    background-color: black;
+    background-color: rgb(15, 15, 15);
     text-align: center;
     grid-area: footer;
     color: white;
