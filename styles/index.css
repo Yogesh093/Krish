@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(15, 15, 15);
+    color: #f1f1f1;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+}
+
+
+header {
+    position: sticky;
+    background-color: hsl(0, 0%, 0%);
+    grid-area: header;
+    top: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    animation: fadeIn 1s ease-out;
+    color: white;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+}
+
+.container-nav-links {
+    list-style-type: none;
+    padding: 0;
+    gap: 5rem;  
+    display: flex;
+    justify-content: center;
+    align-self:center;
+    font-size: x-large;
+    text-decoration: none;
+}
+
+.nav-links {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-self:center;
+}
+
+.nav-links:hover{
+    background-color: rgb(44, 44, 44);
+    color: white;
+    text-decoration: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    background-color: rgba(255, 255, 0, 0.772);
+    border: none;
+    width: 10em;
+    height: 4em;
+    margin: 10%;
+}
+
+button:hover {
+    background-color: rgb(255, 255, 0);
+}
+
+
+main{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; 
+    grid-template-areas:saw ;
+    grid-gap: 10px;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    grid-area: footer;
+    color: white;
+    bottom: 0;
+}
