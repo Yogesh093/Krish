@@ -142,3 +142,13 @@ footer {
     color: white;
     bottom: 0;
 }
+
+    /* Animations */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
